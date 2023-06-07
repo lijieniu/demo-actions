@@ -16,4 +16,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: ./.github/actions/action1
+      - name: Action1
+        uses: ./.github/actions/action1
